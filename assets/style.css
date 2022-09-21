@@ -53,6 +53,7 @@ align-left {
 }
 
 .container {
+    text-align: left;
     top: 0;
     right: 0;
     left: 0;
@@ -76,7 +77,6 @@ align-left {
 }
 
 .content {
-    text-align: left;
     position: absolute;
     top: 0;
     right: 0;
@@ -89,8 +89,13 @@ align-left {
     color: #ff8600;
 }
 
+h1 {
+    text-align: center;
+}
+
 .boxe {
-    width: 90%;
+    text-align: left;
+    width: 40%;
     height: 100%;
     padding: 26px;
 }
