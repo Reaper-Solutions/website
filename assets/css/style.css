@@ -7,7 +7,9 @@ header {
     right: 0;
     left: 0;
     top: 0;
-    margin-top: 0;
+    width: 100%;
+    height: 5%;
+    display: inline-flex;
     text-decoration: none;
     font-size: 18px;
     color: #f2f2f2;
@@ -28,11 +30,13 @@ header {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+    box-shadow: inset 0 0 1em black, 0 0 3em #1a1a34;
 }
 
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+    box-shadow: inset 0 0 1em black, 0 0 1em green;
 }
 
 /* BODY */
@@ -42,6 +46,21 @@ body {
     min-height: 100%;
     text-align: center;
     background-color: #222231;
+}
+
+.half-full {
+    width: 100%;
+    display: inline-block;
+}
+
+.half-left {
+    width: 50%;
+    float: left;
+}
+
+.half-right {
+    width: 50%;
+    float: right;
 }
 
 a {
@@ -101,6 +120,26 @@ td {
     padding: 14px;
 }
 
+h1 {
+    font-size: 64px;
+    color: #f2f2f2;
+}
+
+h2 {
+    font-size: 64px;
+    color: rgba(63, 255, 0, 0.74);
+}
+
+p, li {
+    font-size: 24px;
+    color: rgba(242, 242, 242, 0.89);
+}
+
+td {
+    font-size: 24px;
+    color: rgba(217, 216, 216, 0.89);
+}
+
 /* FOOTER */
 
 footer {
@@ -124,4 +163,72 @@ footer {
     color: #3cf843;
     text-decoration-line: underline;
     text-decoration-color: #4CAF50;
+}
+
+i {
+    -webkit-animation: fa-forward 1s infinite;
+}
+
+@-webkit-keyframes fa-forward {
+    10% {
+        transform: translateX(-2px);
+    }
+    20% {
+        transform: translateX(-4px);
+    }
+    30% {
+        transform: translateX(-6px);
+    }
+    40% {
+        transform: translateX(-8px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+    70% {
+        transform: translateX(8px);
+    }
+    80% {
+        transform: translateX(6px);
+    }
+    90% {
+        transform: translateX(4px);
+    }
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 980px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .half-left {
+        width: 100%;
+        float: none;
+    }
+
+    .half-right {
+        width: 100%;
+        float: none;
+    }
+
+    .half-full {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .topnav a {
+        display: block;
+        text-align: left;
+        background-color: #1a1a34;
+    }
 }
