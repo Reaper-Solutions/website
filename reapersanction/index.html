@@ -7,194 +7,194 @@
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/img/logo.jpg" rel="icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6154018360048793"
-            crossorigin="anonymous"></script>
+    <script src="../assets/js/clipboard.js"></script>
 </head>
 
 <header>
-    <div class="top">
-        <div class="topnav">
+    <div class="topnav">
+        <div class="content">
             <a href="../index.html">Home</a>
-            <a href="../whoweare/index.html">Who we are</a>
+            <a href="../index.html">SOON</a>
             <a class="active" href="index.html">Minecraft ReaperSanction</a>
         </div>
     </div>
 </header>
 
 <body>
-<div class="content">
-    <div class="container">
-        <br><br>
-        <div class="half-full">
-            <div class="half-left">
-                <h2>Minecraft ReaperSanction</h2>
-                <p><i class="fa fa-angle-right" style="font-weight: bold"></i><i class="fa fa-angle-right"
-                                                                                 style="font-weight: bold"></i>
-                    This is a gui punishment plugin for spigot minecraft server. From 1.8 to latest minecraft
-                    versions.<br><br>
-                </p>
-            </div>
-            <div class="half-right">
-                <a href="https://github.com/Reaper-Solutions/Minecraft-ReaperSanction/releases" target="_blank">
-                    <div class="download">
-                        <h1>Download</h1>
-                        <p>Latest version</p>
-                    </div>
-                </a>
-            </div>
+<section class="content">
+    <div class="presentation">
+        <div class="fast">
+            <h1>Minecraft Plugin ReaperSanction</h1>
+            <li>Gui punishment plugin for spigot minecraft server.</li>
+            <li>From 1.8 to latest minecraft versions.</li>
         </div>
     </div>
-    <div class="boxe">
-        <h2>Informations</h2>
-        <p>This plugin is a powered gui punishment plugin.
-            If you have any bug, please make an issue on github. If you have an issue with the config,
-            delete the config and restart your server.</p>
+    <div class="links">
+        <div class="fast">
+            <a class="export" href="https://github.com/Reaper-Solutions/Minecraft-ReaperSanction/releases"
+               target="_blank">
+                <img alt="Download" height="64" src="../assets/img/download.png" width="64">
+            </a>
+            <a class="export" href="https://github.com/Reaper-Solutions/Minecraft-ReaperSanction" target="_blank">
+                <img alt="Github" height="64" src="../assets/img/github.png" width="64">
+            </a>
+        </div>
     </div>
-    <div class="boxe">
-        <h2>FAQ</h2>
+</section>
+<section class="content-desc">
+    <div class="full">
+        <h1>FAQ</h1>
         <li>Do I need a sanction minecraft plugin like advancedban or liteban etc ? NO</li>
         <li>Do I need a database ? Not for the moment, in future updates, you will be able to choose your storage
             preferences.
         </li>
+        <li>What do we do if there is a bug ? If you have any bug, please make an issue on github. If you have an issue
+            with the config,
+            delete the config and restart your server.
+        </li>
         <li>BungeeCord / Velocity proxy version ? Coming soon</li>
     </div>
-    <div class="boxe">
-        <h2>Installation</h2>
+</section>
+<section class="content-desc">
+    <div class="full">
+        <h1>Installation</h1>
         <p>
             <li>Put this plugin in your plugins folder
             <li>Restart or reload your server
             <li>Change something in config.yml if it's needed
         <li>Done :)
     </div>
-    <div class="boxe">
-        <h2>In developpement</h2>
-        <p>
-            <li>SQL bans, mutes with a rework of storage
-            <li>History of sanctions
-            <li>Rework of /report
-            <li>Custom Inventory
+</section>
+<section class="content-desc">
+    <div class="full">
+        <h1>In developpement</h1>
+        <li>SQL bans, mutes with a rework of storage
+        <li>History of sanctions
+        <li>Rework of /report
+        <li>Custom Inventory
         <li>Proxy (Velocity/BungeeCord) version
     </div>
-    <div class="boxe">
-        <h2>Bugs ?</h2>
-        <p>Please make an issue on github
+</section>
+<section class="content-desc">
+    <div class="full">
+        <h1>Commands, permissions & more</h1>
+        <table class="tableau">
+            <tr>
+                <td>Commands</td>
+                <td>Alias</td>
+                <td>Sub commands</td>
+                <td>Args</td>
+                <td>Action</td>
+                <td>Permission</td>
+            </tr>
+            <tr>
+                <td>/rs</td>
+                <td>/reapersanction</td>
+                <td></td>
+                <td>player_name</td>
+                <td>Open the gui</td>
+                <td>reapersanction</td>
+            </tr>
+            <tr>
+                <td>/ban</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason</td>
+                <td>Ban a player</td>
+                <td>reapersanction.ban</td>
+            </tr>
+            <tr>
+                <td>/tempban</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason time</td>
+                <td>Tempban a player</td>
+                <td>reapersanction.tempban</td>
+            </tr>
+            <tr>
+                <td>/kick</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason</td>
+                <td>Kick a player</td>
+                <td>reapersanction.kick</td>
+            </tr>
+            <tr>
+                <td>/mute</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason</td>
+                <td>Mute a player</td>
+                <td>reapersanction.mute</td>
+            </tr>
+            <tr>
+                <td>/tempmute</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason time</td>
+                <td>Tempmute a player</td>
+                <td>reapersanction.tempmute</td>
+            </tr>
+            <tr>
+                <td>/ban-ip</td>
+                <td></td>
+                <td></td>
+                <td>player_name reason</td>
+                <td>Ban an ip</td>
+                <td>reapersanction.banip</td>
+            </tr>
+            <tr>
+                <td>/vanish</td>
+                <td>/v</td>
+                <td></td>
+                <td>player_name</td>
+                <td>Vanish a player</td>
+                <td>reapersanction.vanish</td>
+            </tr>
+            <tr>
+                <td>/unban</td>
+                <td></td>
+                <td></td>
+                <td>player_name</td>
+                <td>Unban a player</td>
+                <td>reapersanction.unban</td>
+            </tr>
+            <tr>
+                <td>/unmute</td>
+                <td></td>
+                <td></td>
+                <td>player_name</td>
+                <td>Unmute a player</td>
+                <td>reapersanction.unmute</td>
+            </tr>
+            <tr>
+                <td>/report</td>
+                <td></td>
+                <td></td>
+                <td>player_name</td>
+                <td>Report a player</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>/rsadmin</td>
+                <td></td>
+                <td>rl, reload, infos</td>
+                <td></td>
+                <td>Reload the config, get the plugin infos</td>
+                <td>reapersanction.rsadmin</td>
+            </tr>
+        </table>
     </div>
-    <h2>Commands, permissions & more</h2>
-    <table class="tableau">
-        <tr>
-            <td>Commands</td>
-            <td>Alias</td>
-            <td>Sub commands</td>
-            <td>Args</td>
-            <td>Action</td>
-            <td>Permission</td>
-        </tr>
-        <tr>
-            <td>/rs</td>
-            <td>/reapersanction</td>
-            <td></td>
-            <td>player_name</td>
-            <td>Open the gui</td>
-            <td>reapersanction</td>
-        </tr>
-        <tr>
-            <td>/ban</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason</td>
-            <td>Ban a player</td>
-            <td>reapersanction.ban</td>
-        </tr>
-        <tr>
-            <td>/tempban</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason time</td>
-            <td>Tempban a player</td>
-            <td>reapersanction.tempban</td>
-        </tr>
-        <tr>
-            <td>/kick</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason</td>
-            <td>Kick a player</td>
-            <td>reapersanction.kick</td>
-        </tr>
-        <tr>
-            <td>/mute</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason</td>
-            <td>Mute a player</td>
-            <td>reapersanction.mute</td>
-        </tr>
-        <tr>
-            <td>/tempmute</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason time</td>
-            <td>Tempmute a player</td>
-            <td>reapersanction.tempmute</td>
-        </tr>
-        <tr>
-            <td>/ban-ip</td>
-            <td></td>
-            <td></td>
-            <td>player_name reason</td>
-            <td>Ban an ip</td>
-            <td>reapersanction.banip</td>
-        </tr>
-        <tr>
-            <td>/vanish</td>
-            <td>/v</td>
-            <td></td>
-            <td>player_name</td>
-            <td>Vanish a player</td>
-            <td>reapersanction.vanish</td>
-        </tr>
-        <tr>
-            <td>/unban</td>
-            <td></td>
-            <td></td>
-            <td>player_name</td>
-            <td>Unban a player</td>
-            <td>reapersanction.unban</td>
-        </tr>
-        <tr>
-            <td>/unmute</td>
-            <td></td>
-            <td></td>
-            <td>player_name</td>
-            <td>Unmute a player</td>
-            <td>reapersanction.unmute</td>
-        </tr>
-        <tr>
-            <td>/report</td>
-            <td></td>
-            <td></td>
-            <td>player_name</td>
-            <td>Report a player</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>/rsadmin</td>
-            <td></td>
-            <td>rl, reload, infos</td>
-            <td></td>
-            <td>Reload the config, get the plugin infos</td>
-            <td>reapersanction.rsadmin</td>
-        </tr>
-    </table>
-</div>
+</section>
 </body>
 
 <footer>
-    <div class="copyright">
-        Copyright &copy; Reaper Solutions 2022 | <a href="https://github.com/Reaper-Solutions"
-                                                    target="_blank">Github</a>
-        | <a href="https://pages.dev" target="_blank">Hosted</a> and <a href="https://cloudflare.com"
-                                                                        target="_blank">Protected</a> by Cloudflare
+    <div class="content">
+        <p>Copyright &copy; Reaper Solutions 2022 | <a href="https://github.com/Reaper-Solutions"
+                                                       target="_blank">Github</a>
+            | <a href="https://pages.dev" target="_blank">Hosted</a> and <a href="https://cloudflare.com"
+                                                                            target="_blank">Protected</a> by Cloudflare
+        </p>
     </div>
 </footer>
 
