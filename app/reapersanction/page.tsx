@@ -253,13 +253,13 @@ export default function Dev() {
                         <p>See below for the list of compatible GUIs with their exact name in config.</p>
                         <div className="text-left">
                             <ul className="list-disc list-inside">
-                                <li>Main GUI -> MAIN</li>
-                                <li>Mute GUI -> MUTE</li>
-                                <li>Ban GUI -> BAN</li>
-                                <li>History GUI -> HISTORY</li>
-                                <li>Report GUI -> REPORT</li>
-                                <li>End GUI -> END</li>
-                                <li>Ban IP GUI -> BAN_IP</li>
+                                <li>Main GUI <i className="fa-solid fa-arrow-right"></i> MAIN</li>
+                                <li>Mute GUI <i className="fa-solid fa-arrow-right"></i> MUTE</li>
+                                <li>Ban GUI <i className="fa-solid fa-arrow-right"></i> BAN</li>
+                                <li>History GUI <i className="fa-solid fa-arrow-right"></i> HISTORY</li>
+                                <li>Report GUI <i className="fa-solid fa-arrow-right"></i> REPORT</li>
+                                <li>End GUI <i className="fa-solid fa-arrow-right"></i> END</li>
+                                <li>Ban IP GUI <i className="fa-solid fa-arrow-right"></i> BAN_IP</li>
                             </ul>
                         </div>
                         <div className="mt-12"/>
@@ -285,17 +285,17 @@ export default function Dev() {
                         <h4 className="text-lg font-bold">Actions</h4>
                         <h5 className="text-lg font-bold">EXT actions</h5>
                         <p className="text-left">The EXT actions will sudo the player to execute the command.
-                            For example if we have "EXT->SAY HELLO %player%", the player will execute :
+                            For example if we have "EXT<i className="fa-solid fa-arrow-right"></i>SAY HELLO %player%", the player will execute :
                             "/say HELLO %player%". %player% represent the player name.
                         </p>
                         <div className="mt-6"/>
                         <h5 className="text-lg font-bold">INT actions</h5>
                         <p className="text-left">The INT actions will transfer instructions to the plugin.
-                            For example if we have "INT->TEMPBAN->%player%->7day->Fly", the plugin will tempban the
+                            For example if we have "INT<i className="fa-solid fa-arrow-right"></i>TEMPBAN<i className="fa-solid fa-arrow-right"></i>%player%<i className="fa-solid fa-arrow-right"></i>7day<i className="fa-solid fa-arrow-right"></i>Fly", the plugin will tempban the
                             player for 7 days for "Fly".
                         </p>
                         <p className="text-left">The INT actions are have optional arguments. For example we can remove
-                            the reason of the action. If we have "INT->TEMPBAN->%player%->7day", the plugin will tempban
+                            the reason of the action. If we have "INT<i className="fa-solid fa-arrow-right"></i>TEMPBAN<i className="fa-solid fa-arrow-right"></i>%player%<i className="fa-solid fa-arrow-right"></i>7day", the plugin will tempban
                             the player for 7 days with the default reason.
                         </p>
                         <div className="mt-6"/>
