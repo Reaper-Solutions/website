@@ -104,12 +104,14 @@ export default function Dev() {
                         development</h2>
                     <div className="flex flex-col items-center justify-center w-full mx-auto text-left mt-4 gap-6">
                         <ul className="list-disc list-inside">
-                            <li>Custom Inventory (IN TESTING see Release Candidate 1.5.0)</li>
-                            <li>Usage of TimeZone selected by player (IN TESTING see Release Candidate 1.5.0)</li>
+                            <li>Custom Inventory (IN TESTING see Release Candidate version {">"}1.5.0-RC1)</li>
+                            <li>Usage of TimeZone selected by player (IN TESTING see Release Candidate
+                                version {">"}1.5.0-RC1)
+                            </li>
+                            <li>Discord webhook (IN TESTING see Release Candidate version {">"}1.5.0-RC2)</li>
+                            <li>Better tab completer (IN TESTING see Release Candidate version {">"}1.5.0-RC2)</li>
                             <li>Proxy (Velocity/BungeeCord) version (with Redis or BungeeChannels)</li>
-                            <li>Discord webhook (customizable)</li>
                             <li>Better report (system of views, claims etc)</li>
-                            <li>Better tab completer</li>
                         </ul>
                     </div>
                     <div className="mt-16"/>
