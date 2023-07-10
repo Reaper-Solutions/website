@@ -377,7 +377,7 @@ export default function Dev() {
                             <tr>
                                 <td className="border px-4 py-2">CLOSE</td>
                                 <td className="border px-4 py-2">{"->"}%PLAYER%</td>
-                                <td className="border px-4 py-2">Close the GUI of the playerr</td>
+                                <td className="border px-4 py-2">Close the GUI of the player</td>
                             </tr>
                             <tr>
                                 <td className="border px-4 py-2">REPORT</td>
