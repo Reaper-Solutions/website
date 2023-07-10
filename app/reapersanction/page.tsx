@@ -291,11 +291,13 @@ export default function Dev() {
                         <div className="mt-6"/>
                         <h5 className="text-lg font-bold">INT actions</h5>
                         <p className="text-left">The INT actions will transfer instructions to the plugin.
-                            For example if we have "INT{"->"}TEMPBAN{"->"}%player%{"->"}7day{"->"}Fly", the plugin will tempban the
+                            For example if we have "INT{"->"}TEMPBAN{"->"}%player%{"->"}7day{"->"}Fly", the plugin will
+                            tempban the
                             player for 7 days for "Fly".
                         </p>
                         <p className="text-left">The INT actions are have optional arguments. For example we can remove
-                            the reason of the action. If we have "INT{"->"}TEMPBAN{"->"}%player%{"->"}7day", the plugin will tempban
+                            the reason of the action. If we have "INT{"->"}TEMPBAN{"->"}%player%{"->"}7day", the plugin
+                            will tempban
                             the player for 7 days with the default reason.
                         </p>
                         <div className="mt-6"/>
@@ -303,7 +305,85 @@ export default function Dev() {
                         <p className="text-left">The INT actions ENDPOINTS are the possible actions that the plugin can
                             do. The list of the possible actions is below.
                         </p>
-                        <p>IN REDACTION</p>
+                        <p className="text-left">() = optional argument</p>
+                        <table className="table-auto">
+                            <thead>
+                            <tr>
+                                <th className="px-4 py-2">Name</th>
+                                <th className="px-4 py-2">Arguments</th>
+                                <th className="px-4 py-2">Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td className="border px-4 py-2">TEMPBAN</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%{"->"}duration({"->"}reason)</td>
+                                <td className="border px-4 py-2">Tempban a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">BAN</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%({"->"}reason)</td>
+                                <td className="border px-4 py-2">Ban a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">TEMPMUTE</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%{"->"}duration({"->"}reason)</td>
+                                <td className="border px-4 py-2">Tempmute a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">BAN_IP</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%({"->"}reason)</td>
+                                <td className="border px-4 py-2">Ban the IP of a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">KICK</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%({"->"}reason)</td>
+                                <td className="border px-4 py-2">Kick a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">MUTE</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%({"->"}reason)</td>
+                                <td className="border px-4 py-2">Mute a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">UNMUTE</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Unmute a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">UNBAN</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Unban a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">UNBAN_IP</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Unban the IP of a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">GUI</td>
+                                <td className="border px-4 py-2">{"->"}%GUI%{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Open a GUI to a player /!\ not supported by the history
+                                    gui
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">GUI_DYN</td>
+                                <td className="border px-4 py-2">{"->"}%GUI%{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Open a GUI (Made for the history GUI)</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">CLOSE</td>
+                                <td className="border px-4 py-2">{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Close the GUI of a player</td>
+                            </tr>
+                            <tr>
+                                <td className="border px-4 py-2">REPORT</td>
+                                <td className="border px-4 py-2">{"->"}%REASON%{"->"}%PLAYER%</td>
+                                <td className="border px-4 py-2">Report a player</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div className="mt-24"/>
                 </div>
