@@ -25,6 +25,13 @@ body {
     ) rgb(var(--background-start-rgb));
 }
 
+@media screen and (max-width: 1600px) {
+    #code {
+        font-size: 1rem;
+        zoom: 1;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     body {
         min-width: 400px;
@@ -34,4 +41,26 @@ body {
         flex-direction: column;
     }
 
+    #table {
+        font-size: 0.8rem;
+        zoom: 0.8;
+    }
+
+    #code {
+        font-size: 0.9rem;
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #table {
+        font-size: 0.6rem;
+        zoom: 0.6;
+    }
+
+    #code {
+        font-size: 0.7rem;
+        zoom: 0.6;
+    }
 }
