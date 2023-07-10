@@ -224,7 +224,7 @@ export default function Dev() {
                                 <td className="border px-4 py-2">/vanish</td>
                                 <td className="border px-4 py-2">/vanish (player)</td>
                                 <td className="border px-4 py-2">reapersanction.vanish</td>
-                                <td className="border px-4 py-2">Vanish yourself or a player</td>
+                                <td className="border px-4 py-2">Vanish yourself</td>
                             </tr>
                             <tr>
                                 <td className="border px-4 py-2">/report</td>
