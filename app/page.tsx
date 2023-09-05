@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Particles from "@/app/components/particles";
+import Footer from "@/app/components/footer";
 
 const navigation = [
     {name: "ReaperSanction", href: "/reapersanction"},
@@ -58,6 +59,7 @@ export default function Home() {
                     contact@farmeurimmo.fr</a>.
                 </p>
             </div>
+            <Footer/>
         </main>
     )
 }

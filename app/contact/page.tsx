@@ -5,6 +5,7 @@ import {Navigation} from "../components/nav";
 import {Card} from "../components/card";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDiscord} from '@fortawesome/free-brands-svg-icons'
+import Footer from "@/app/components/footer";
 
 const socials = [
     {
@@ -29,7 +30,7 @@ const socials = [
 
 export default function Contact() {
     return (
-        <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+        <main className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
             <Navigation/>
             <title>Contact - Reaper Solutions</title>
             <h1 className="text-4xl font-bold text-center text-white font-display md:text-6xl">Contact</h1>
@@ -65,6 +66,7 @@ export default function Contact() {
                     ))}
                 </div>
             </div>
-        </div>
+            <Footer/>
+        </main>
     );
 }

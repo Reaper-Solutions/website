@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDiscord, faGithub} from '@fortawesome/free-brands-svg-icons'
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {tomorrow} from 'react-syntax-highlighter/dist/esm/styles/prism';
+import Footer from "@/app/components/footer";
 
 const good_points = [
     "Gui punishment plugin for spigot minecraft server.",
@@ -69,7 +70,7 @@ const links = [
 
 export default function Dev() {
     return (
-        <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 overflow-hidden">
+        <main className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 overflow-hidden">
             <Navigation/>
             <Particles
                 className="absolute inset-0 -z-10 animate-fade-in"
@@ -385,7 +386,8 @@ export default function Dev() {
                     <div className="mt-24"/>
                 </div>
             </div>
-        </div>
+            <Footer/>
+        </main>
     );
 }
 
