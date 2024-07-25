@@ -9,7 +9,7 @@ export default function Footer() {
                 href="https://reaper.farmeurimmo.fr"
                 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
             >
-                Copyright © 2023 Reaper Solutions
+                Copyright © 2024 Reaper Solutions
             </Link>
             <Link href="https://github.com/Reaper-Solutions/website"
                   className="text-sm duration-500 text-zinc-500 hover:text-zinc-300">

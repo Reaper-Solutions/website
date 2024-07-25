@@ -73,7 +73,9 @@ export default function RootLayout({
             <link rel="canonical" href="https://reaper.farmeurimmo.fr"/>
             <link rel="apple-touch-icon" href="https://cdn.farmeurimmo.fr/img/reaper-solution.jpg"/>
         </head>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+        {children}
+        </body>
         </html>
     )
 }

@@ -76,6 +76,11 @@ export default function Dev() {
                 className="absolute inset-0 -z-10 animate-fade-in"
                 quantity={100}
             />
+            <div className="bg-red-500 p-2 mx-20">
+                <p className="text-xl text-black">Reaper Solutions will be closed the 1st september 2024. Existing
+                    projects will be moved to Farmeurimmo github account. Documentation will be moved too on the main
+                    website. Thank you for your understanding.</p>
+            </div>
             <title>ReaperSanction - Reaper Solutions</title>
             <div className="container flex flex-col items-center justify-center min-h-screen px-4 mx-auto">
                 <div className="flex flex-col items-center justify-center w-full mx-auto text-center mt-32">
